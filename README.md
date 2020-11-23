@@ -1,7 +1,7 @@
 connect esp-01 wifi module with raspberrypi 3 via serial port uart communication - AT commands 
 
 ### welcome! let's get started.
-![image of my DIY Wi-Fi Duck](https://raw.githubusercontent.com/spacehuhn/wifi_ducky/master/images/my_wifi_duck.jpg)
+![image of esp01 and rpi 3](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/esp01.jpg)
 ### Contents
 
 first of all we need to download and flash rpi software to our rpi 3. easiest way to do so is to download the raspberry pi imager from the raspberry pi main site.
