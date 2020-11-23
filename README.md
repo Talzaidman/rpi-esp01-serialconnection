@@ -68,11 +68,50 @@ open your rpi terminal and type
 
 the raspberry pi software configuration window will apear.
 
-![image of the interface](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/interface.jpg)
+![image of the interface](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/interface.jpeg)
 
-first of all we need to download and flash rpi software to our rpi 3. easiest way to do so is to download the raspberry pi imager from the raspberry pi main site.
-after you install the imager, connect your flash drive to your computer and flash the latest recommended raspbian software.
-eject it and insert it to the rpi 3, then boot.
+next, scroll to interface options and press enter.
+
+![image of the interface](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/serial.jpeg)
+
+scroll to serial port and press enter.
+
+![image of the interface](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/shell.jpeg)
+
+select no enter press enter.
+
+![image of the interface](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/hardware.jpeg)
+
+select yes and press enter.
+
+now, when that's done reboot the rpi. now we need to configure some OS files. nothing to complicated.
+
+first, go to the terminal and enter 
+
+`sudo vim /boot/config.txt` or `sudo nano /boot/config.txt` (depends what editing utility you prefer)
+
+add to the end of the file:
+`dtoverlay=pi3-miniuart-bt`
+(the reason for doing so, is that Due to the Pi 3's support for Bluetooth, the full serial interface is now used by the built-in Bluetooth device. therefor, we need to disable it)
+
+after rebooting, you can notice that when listing the /dev dirctory(ls -l /dev/) the following is listed:
+
+`serial0 -> ttyAMA0
+serial1 -> ttyS0`
+
+in the rsp 3, the full UART is on ttyAMA0 and the serial0 is the one we are going to use. so now we can continue with our configurations. 
+
+our next step is to open a terminal threw the serial0 port. we'll do so by usuing the minicom utility.
+install it with:
+
+`sudo apt install minicom`
+
+then, type:
+
+`sudo minicom -s`
+
+now the minicom utility opened with it's setting configutartion window.
+go to "serial port settings" as seen in the image below:
 
 
 
