@@ -13,6 +13,7 @@ we are going to connect the ESP-01 wifi module with the raspberrypi 3, via seria
   - [Preparation](#preparation)  
   - [ESP-01](#ESP-01)
   - [wiring](#wiring)
+  - [Raspberry pi 3](#Raspberry-pi-3)
 
 
 
