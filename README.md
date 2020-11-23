@@ -13,8 +13,8 @@ we are going to connect the ESP-01 wifi module with the raspberrypi 3, via seria
   - [Preparation](#preparation)  
   - [ESP-01](#ESP-01)
   - [wiring](#wiring)
-- [How to use it](#how-to-use-it)
-- [Sources and additional Links](#sources-and-additional-links)
+
+
 
 ## Introduction ##
 
@@ -155,9 +155,9 @@ to do so, in the shell terminal, type:
 
 `sudo minicom -b 115200 -o -D /dev/serial0` 
 
-in the minicom terminal, type AT commands followed by ctrl-m and then ctrl-j. you should get the OK reply, meaning that the ESP-01 got the command ant replied.
+in the minicom terminal, type AT commands followed by ctrl-m and then ctrl-j. you should get the OK reply, meaning that the ESP-01 got the command and replied.
 
-
+that's it. enjoy!
 
 
 
