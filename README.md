@@ -23,7 +23,7 @@ we are going to connect the ESP-01 wifi module with the raspberry pi 3, via seri
 
 The ESP-01 is a micro-controller chip that includes on-board Wi-Fi. Originally intended as a UART to WiFi adaptor, allowing other micro-controllers to connect to a Wi-Fi network and make simple TCP/IP connections. the ESP-01 quickly became popular as a stand alone micro-controller because of its low price point.
 
-![image of ESP01 and rpi 3](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/esp01.jpg)
+![image of ESP01 and rpi 3](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/esp-01.jpg)
 
 Technically, rpi 3 has wifi capability, thus eliminating  the need to add the ESP-01 as a wifi add on. but neither  the less, we can still use the rpi to configure and control the ESP-01.
 
