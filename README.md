@@ -11,7 +11,7 @@ we are going to connect the esp-01 wifi module with the raspberrypi 3, via seria
 - [Disclaimer](#disclaimer)
 - [Installation](#installation)
   - [Preparation](#preparation)  
-  - [ESP01](#esp01)
+  - [ESP-01](#esp-01)
   - [wiring](#wiring)
 - [How to use it](#how-to-use-it)
 - [Sources and additional Links](#sources-and-additional-links)
@@ -31,7 +31,7 @@ technicaly, rpi 3 has wifi capability, thus eleminating the need to add the esp-
 connecting the esp-01 to the rpi is implimented via the serial port by connecting the esp-01 to the UART pins on the rpi.
 by adjusting the rpi configurations, we're able to screen the serial port and communicating with the esp-01 with AT commands.
 
-### disclamer
+### Disclamer
 
 Use it only for testing purposes on your own devices!  
 I don't take any responsibility for what you do with this project. 
