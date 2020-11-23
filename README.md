@@ -113,5 +113,24 @@ then, type:
 now the minicom utility opened with it's setting configutartion window.
 go to "serial port settings" as seen in the image below:
 
+![image of the interface](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/config.jpeg)
+
+inside, you'll need to change the Hardware flow control to 'off'.
+also, change the port /dev/serial0.
+
+![image of the interface](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/flow.jpeg)
+
+press 'esc' and "save setup as dfl". than exit.
+
+that's it! you now should be able to use the minicom terminal to talk with the esp-01 with AT commands.
+
+to do so, in the shell terminal, type:
+
+`sudo minicom -b 115200 -o -D /dev/serial0` 
+
+in the minicom terminal, type AT commands followed by ctrl-m and then ctrl-j. you should get the OK reply, meaning that the esp-01 got the command ant replied.
+
+
+
 
 
