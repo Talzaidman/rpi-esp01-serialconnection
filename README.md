@@ -68,7 +68,7 @@ open your rpi terminal and type
 
 the raspberry pi software configuration window will apear.
 
-
+![image of the interface](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/interface.jpg)
 
 first of all we need to download and flash rpi software to our rpi 3. easiest way to do so is to download the raspberry pi imager from the raspberry pi main site.
 after you install the imager, connect your flash drive to your computer and flash the latest recommended raspbian software.
