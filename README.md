@@ -1,8 +1,8 @@
 ### welcome!
 
-we are going to connect the esp-01 wifi module with the raspberrypi 3, via serial port UART communication, and communicate with it with AT commands.  
+we are going to connect the ESP-01 wifi module with the raspberrypi 3, via serial port UART communication, and communicate with it with AT commands.  
 
-![image of esp01 and rpi 3](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/rpi-esp01.jpg)
+![image of ESP01 and rpi 3](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/rpi-esp01.jpg)
 
 ### Contents
 - [Introduction](#Introduction)
@@ -11,7 +11,7 @@ we are going to connect the esp-01 wifi module with the raspberrypi 3, via seria
 - [Disclaimer](#disclaimer)
 - [Installation](#installation)
   - [Preparation](#preparation)  
-  - [ESP-01](#esp-01)
+  - [ESP-01](#ESP-01)
   - [wiring](#wiring)
 - [How to use it](#how-to-use-it)
 - [Sources and additional Links](#sources-and-additional-links)
@@ -20,18 +20,18 @@ we are going to connect the esp-01 wifi module with the raspberrypi 3, via seria
 
 ### What it is
 
-The esp-01 is a micro-controller chip that includes on-board Wi-Fi. Originally intended as a UART to WiFi adaptor, allowing other micro-controllers to connect to a Wi-Fi network and make simple TCP/IP connections. the esp-01 quickly became popular as a stand alone micro-controller because of its low price point.
+The ESP-01 is a micro-controller chip that includes on-board Wi-Fi. Originally intended as a UART to WiFi adaptor, allowing other micro-controllers to connect to a Wi-Fi network and make simple TCP/IP connections. the ESP-01 quickly became popular as a stand alone micro-controller because of its low price point.
 
-![image of esp01 and rpi 3](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/esp01.jpg)
+![image of ESP01 and rpi 3](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/esp01.jpg)
 
-technicaly, rpi 3 has wifi capability, thus eleminating the need to add the esp-01 as a wifi add on. but nether the less, we can still use the rpi to configure and control the esp-01.
+technicaly, rpi 3 has wifi capability, thus eleminating the need to add the ESP-01 as a wifi add on. but nether the less, we can still use the rpi to configure and control the ESP-01.
 
 ### How it works
 
-connecting the esp-01 to the rpi is implimented via the serial port by connecting the esp-01 to the UART pins on the rpi.
-by adjusting the rpi configurations, we're able to screen the serial port and communicating with the esp-01 with AT commands.
+connecting the ESP-01 to the rpi is implimented via the serial port by connecting the ESP-01 to the UART pins on the rpi.
+by adjusting the rpi configurations, we're able to screen the serial port and communicating with the ESP-01 with AT commands.
 
-### Disclamer
+### Disclaimer
 
 Use it only for testing purposes on your own devices!  
 I don't take any responsibility for what you do with this project. 
@@ -46,17 +46,17 @@ what you'll need:
 - **jumper wires**  
 - **Some skill, knowledge and common sense on this topic**  
 
-### esp-01
+### ESP-01
 
-the esp-01 chip is supposed to come with the software pre-installed stright from the manufacturer. thus thechnicaly we don't need to do anything with it.
-if for some reason your esp-01 is not responsive there are three options for what the problem might be:
-1) you've done something incorectly - the connection with the esp-01 isn't astablished.
-2) your esp-01's software is corupted, and you should concider to flash new software on it.
-3) your esp-01 is dameged. luckly, it's not expencive...
+the ESP-01 chip is supposed to come with the software pre-installed stright from the manufacturer. thus thechnicaly we don't need to do anything with it.
+if for some reason your ESP-01 is not responsive there are three options for what the problem might be:
+1) you've done something incorectly - the connection with the ESP-01 isn't astablished.
+2) your ESP-01's software is corupted, and you should concider to flash new software on it.
+3) your ESP-01 is dameged. luckly, it's not expencive...
 
 ### Wiring
 
-connecting the esp-01 to the rpi is fairly simple.
+connecting the ESP-01 to the rpi is fairly simple.
 
 Ground - connect to ground
 
@@ -155,7 +155,7 @@ to do so, in the shell terminal, type:
 
 `sudo minicom -b 115200 -o -D /dev/serial0` 
 
-in the minicom terminal, type AT commands followed by ctrl-m and then ctrl-j. you should get the OK reply, meaning that the esp-01 got the command ant replied.
+in the minicom terminal, type AT commands followed by ctrl-m and then ctrl-j. you should get the OK reply, meaning that the ESP-01 got the command ant replied.
 
 
 
