@@ -1,6 +1,7 @@
 ### welcome!
 we are going to connect the amazing esp-01 wifi module with the raspberrypi 3, via serial port UART communication, and communicate with it with AT commands. 
 ![image of esp01 and rpi 3](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/rpi-esp01.jpg)
+
 ### Contents
 - [Introduction](#Introduction)
   - [What it is](#what-it-is)
@@ -19,6 +20,8 @@ we are going to connect the amazing esp-01 wifi module with the raspberrypi 3, v
 ### What it is
 
 The esp-01 is a micro-controller chip that includes on-board Wi-Fi. Originally intended as a UART to WiFi adaptor, allowing other micro-controllers to connect to a Wi-Fi network and make simple TCP/IP connections. the esp-01 quickly became popular as a stand alone micro-controller because of its low price point.
+
+![image of esp01 and rpi 3](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/esp01.jpg)
 
 technicaly, rpi 3 has wifi capability, thus eleminating the need to add the esp-01 as a wifi add on. but nether the less, we can still use the rpi to configure and control the esp-01.
 
@@ -50,6 +53,10 @@ if for some reason your esp-01 is not responsive there are three options for wha
 2) your esp-01's software is corupted, and you should concider to flash new software on it.
 3) your esp-01 is dameged. luckly, it's not expencive...
 
+### Wiring
+
+
+
 ### Raspberry pi 3
 
 most of the work is configuring the rpi OS.
@@ -72,15 +79,15 @@ the raspberry pi software configuration window will apear.
 
 next, scroll to interface options and press enter.
 
-![image of the interface](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/serial.jpeg)
+![image of the serial select](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/serial.jpeg)
 
 scroll to serial port and press enter.
 
-![image of the interface](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/shell.jpeg)
+![image of the interface choise](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/shell.jpeg)
 
 select no enter press enter.
 
-![image of the interface](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/hardware.jpeg)
+![image of the hardware choise](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/hardware.jpeg)
 
 select yes and press enter.
 
@@ -113,14 +120,14 @@ then, type:
 now the minicom utility opened with it's setting configutartion window.
 go to "serial port settings" as seen in the image below:
 
-![image of the interface](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/config.jpeg)
+![image of the minicom settings](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/config.jpeg)
 
 inside, you'll need to change the Hardware flow control to 'off'.
-also, change the port /dev/serial0.
+also, change the port to /dev/serial0.
 
-![image of the interface](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/flow.jpeg)
+![image of the serial port settings](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/flow.jpeg)
 
-press 'esc' and "save setup as dfl". than exit.
+press 'esc' and then "save setup as dfl". then exit.
 
 that's it! you now should be able to use the minicom terminal to talk with the esp-01 with AT commands.
 
