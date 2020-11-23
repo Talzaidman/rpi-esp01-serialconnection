@@ -57,16 +57,24 @@ if for some reason your esp-01 is not responsive there are three options for wha
 
 connecting the esp-01 to the rpi is fairly simple.
 
-1 Ground - connect to ground
-2 TXO - the serial tx pin
-3 GPIO2 - ignore
-4 CHPD - chip enable connect to 3.3V
-5 GPIO0 - ignore
-6 RST - reset leave unconnected
-7 RXI - the serial rx pin
-8 VDD - Supply voltage connect to 3.3V
+Ground - connect to ground
 
-![image of the circuit](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/circuit.jpeg)
+TXO - the serial tx pin
+
+GPIO2 - ignore
+
+CHPD - chip enable connect to 3.3V
+
+GPIO0 - ignore
+
+RST - reset leave unconnected
+
+RXI - the serial rx pin
+
+VDD - Supply voltage connect to 3.3V
+
+
+![image of the circuit](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/circuit.jpg)
 
 ### Raspberry pi 3
 
