@@ -1,5 +1,7 @@
 ### welcome!
-we are going to connect the amazing esp-01 wifi module with the raspberrypi 3, via serial port UART communication, and communicate with it with AT commands. 
+
+we are going to connect the esp-01 wifi module with the raspberrypi 3, via serial port UART communication, and communicate with it with AT commands.  
+
 ![image of esp01 and rpi 3](https://raw.githubusercontent.com/Talzaidman/rpi-esp01-serialconnection/main/images/rpi-esp01.jpg)
 
 ### Contents
@@ -12,7 +14,6 @@ we are going to connect the amazing esp-01 wifi module with the raspberrypi 3, v
   - [ESP01](#esp01)
   - [wiring](#wiring)
 - [How to use it](#how-to-use-it)
-- [Improvements](#improvements)
 - [Sources and additional Links](#sources-and-additional-links)
 
 ## Introduction ##
